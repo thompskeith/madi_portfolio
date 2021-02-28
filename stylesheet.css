@@ -1,0 +1,855 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+        
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+        
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+        
+*, *:before, *:after {box-sizing: inherit}
+        
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    max-width: 1140px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: calc(7rem + 5%);
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: calc(4.5rem + 5%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #ff9c51;
+    text-align: center;
+    margin: 60px auto 50px auto;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* stripping and setting up styles ends */
+
+/* main content styles starts */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 65px 0 100px 0;
+}
+ 
+.footer_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0 50px 0;
+}
+
+header ul,
+.footer_nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header li {
+    padding-left: 25px;
+}
+
+.header_nav, 
+.footer_nav a {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border-bottom: 4px solid transparent;
+    margin: auto 5px;
+    padding: 3px 10px;
+}
+
+.header_nav:hover {
+    border-bottom: 4px solid #ff9c51;
+}
+
+#header_contact {
+    color: #33486f;
+    background-color: #ff9c51;
+    border: 4px solid #ff9c51;
+    padding: 5px 18px;
+}
+
+#header_contact:hover {
+    background-color: #f8ad74;
+    border: 4px solid #f8ad74;
+}
+
+.logo_mobile {
+    display: none;
+}
+
+.nav_mobile {
+    display: none;
+}
+
+.hero {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%), url(./assets/MadiFuller-20\ Wall.JPG);
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 100px);
+    padding-bottom: 100px;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.15);
+}
+
+.hero_content {
+    margin-right: 30%;
+    color: #ffffff;
+}
+
+.hero_content p {
+    font-size: 3rem;
+    padding-bottom: 25px;
+}
+
+#hero_cta {
+    color: #33486f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    background-color: #ff9c51;
+    border: 4px solid #ff9c51;
+    padding: 10px 22px;
+    border-radius: 300px;
+}
+
+#hero_cta:hover {
+    background-color: #f8ad74;
+    border: 4px solid #f8ad74;
+}
+
+#about {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.about {
+    text-align: center;
+    min-height: 45vh;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.about_img {
+    padding-bottom: 25px;
+}
+
+.about p {
+    margin-top: 0px;
+    text-align: left;
+    padding-left: 10%;
+}
+
+#curator-feed-default-feed-layout {
+    margin-bottom: 50px;
+}
+
+#speaking {
+    padding-top: 50px;
+}
+
+.speaking p {
+    text-align: center;
+}
+
+.speaking_engagements {
+    padding-bottom: 50px;
+}
+
+.divider {
+    height: 2px;
+    width: 80%;
+    background-color: #33486f;
+    align-self: center;
+}
+
+.services_background {
+    background-color: #33486f;
+}
+
+.services {
+    padding-top: 50px;
+    min-height: 50vh;
+    padding-bottom: 80px;
+}
+
+.services_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services_left, 
+.services_middle, 
+.services_right {
+    background-color: #fff;
+    min-width: 300px;
+    max-width: calc((100% / 3) - 66px);
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    /* border: 4px solid #33486f; */
+    border-radius:15px;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.15);
+    min-height: 650px;
+}
+
+.services_left p, 
+.services_middle p, 
+.services_right p {
+    padding: 10px;
+    margin: 0 35px 15px 35px;
+    min-height: 300px;
+}
+
+.resume_workshop_image {
+    background-image: url(./assets/MadiFuller-2.JPG);
+}
+
+.skills_assessment_image {
+    background-image: url(./assets/pexels-startup-stock-photos-212286.jpg);
+}
+
+.coaching_assessment_image {
+    background-image: url(./assets/pexels-christina-morillo-1181715.jpg);
+}
+
+.resume_workshop_image,
+.skills_assessment_image,
+.coaching_assessment_image {
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+.resume_workshop_image:hover,
+.skills_assessment_image:hover,
+.coaching_assessment_image:hover {
+    opacity: 75%;
+}
+
+.services_cta, 
+.resume_cta, 
+.about_cta {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #33486f;
+    background-color: #ff9c51;
+    border: 4px solid #ff9c51;
+    padding: 10px 22px;
+    border-radius: 300px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.services_cta:hover,
+.resume_cta:hover,
+.about_cta:hover {
+    background-color: #f8ad74;
+    border: 4px solid #f8ad74;
+}
+
+.offer_section {
+    background-color: #33486f;
+}
+
+.offer_cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%), url(./assets/green-chameleon-s9CC2SKySJM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.15);
+}
+
+.offer_cta p {
+    color: #ffffff;
+    min-height: 100px;
+    /* padding: 0 80px 25px 80px; */
+}
+
+.speaking {
+    background-color: #33486f;
+    padding-top: 50px;
+    min-height: 50vh;
+    padding-bottom: 80px;
+}
+
+.testimonials_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.testimonial_left, 
+.testimonial_middle, 
+.testimonial_right {
+    min-width: 300px;
+    max-width: calc((100% / 3) - 66px);
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    border-radius:15px;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.15);
+    min-height: 250px;
+    height: 500px;
+    /* border: 4px solid #33486f; */
+}
+
+.testimonial_copy {
+    padding: 10px;
+    margin: 0 35px;
+    height: 200px;
+}
+
+.testimonial_name {
+    padding: none;
+    margin: 25px auto;
+}
+
+.newsletter_signup {
+    background-color: #33486f;
+    min-height: 150px;
+    text-align: center;
+}
+
+.newsletter_signup h3 {
+    color: #ffffff;
+    margin: 0;
+    padding: 50px 0;
+}
+
+.newsletter_form {
+    padding-bottom: 50px;
+}
+
+.emailSignup {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+}
+
+.emailSignup label {
+    margin: 10px;
+    color: #ffffff
+}
+
+/* .form_email {
+    width: 500px;
+} */
+
+.emailSignup input[type="email"] {
+    border: none;
+    padding: 10px;
+    background-color: #ffffff;
+    width: 75%;
+}
+
+input[type="submit"] {
+    padding: 5px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #ff9c51;
+}
+
+footer i {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+/* about page styles */
+
+.about_hero a {
+    color: #33486f;
+}
+
+.about_about {
+    padding-bottom: 80px;
+}
+
+.awards {
+    padding-bottom: 80px;
+}
+
+.awards_section {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.awards_section img {
+    margin: 25px 0;
+    max-width: 100px;
+    max-height: auto;
+}
+
+/* blog page styles */
+
+.blog_blog {
+    margin-bottom: 200px;
+}
+
+#medium-widget {
+    height: auto;
+}
+
+/* contact styles */
+
+.mainSection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.contact_hero a {
+    color: #33486f;
+}
+
+.contact_section,
+.contact_form_flex {
+    margin-bottom: 100px;
+    max-width: calc((100% / 2) - 100px);
+}
+
+.contact_section {
+    padding-right: 20px;
+}
+
+.contact_form_flex {
+    min-width: 500px;
+    max-width: 500px;
+}
+
+.contact_Form {
+    margin-bottom: 50px;
+}
+
+.contactForm {
+    border-radius:15px;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm div {
+    margin: 20px 25px 0 25px;
+}
+
+.firstName, 
+.lastName,
+.contactEmail,
+.help_check,
+.feedbackSubmit {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_Form label {
+    margin-bottom: 8px;
+}
+
+.contact_section ul {
+    display: flex;
+    list-style: none;
+    align-items: flex-start;
+    padding: 20px 0;
+}
+
+.contact_section ul a {
+    color: #ff9c51;
+    padding-right: 20px;
+}
+
+.contact_section ul i {
+    font-size: 30px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset label {
+    padding-right: 5px;
+}
+
+.help_check input[type="text"]::placeholder {
+    padding-left: 3px;
+}
+
+.contactForm textarea {
+    resize: none;
+    width: auto;
+    height: 250px;
+}
+
+.contactForm input[type="submit"] {
+    background-color: #ff9c51;
+    border: 4px solid #ff9c51;
+    padding: 10px 22px;
+    border-radius: 300px;
+    margin: auto auto 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #33486f;
+}
+
+.contactForm input[type="submit"]:hover {
+    background-color: #f8ad74;
+    border: 4px solid #f8ad74;
+    padding: 10px 22px;
+    border-radius: 300px;
+    margin: auto auto 20px 0;
+}
+
+
+/* services styles */
+
+.servicesContent {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: start;
+}
+
+.service_left_a,
+.service_middle_a,
+.service_right_a {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    justify-content: space-between;
+    min-height: 300px;
+}
+
+.resume_workshop_content,
+.skills_assessment_content,
+.coaching_content {
+    min-width: 300px;
+    max-width: calc((100% / 2));
+    padding-left: 75px;
+}
+
+.resume_workshop_content p,
+.skills_assessment_content p,
+.coaching_content p {
+    margin-bottom: 75px;
+}
+
+.resume_workshop_content a,
+.skills_assessment_content a,
+.coaching_content a {
+    margin-bottom: 50px;
+}
+
+.coaching_content {
+    margin-bottom: 100px;
+}
+
+.servicesContent img {
+    box-shadow: -10px -10px 1px #ff9c51;
+}
+
+/* resume lp */
+.workshop_lp_body {
+    background-image: url(./assets/green-chameleon-s9CC2SKySJM-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #ff9c51;
+}
+
+.workshop_lp h2 {
+    font-size: 60px;
+}
+
+.workshop_lp,
+.workshop_form_flex {
+    margin-bottom: 100px;
+    max-width: calc((100% / 2) - 100px);
+}
+
+.workshop_section {
+    padding-right: 20px;
+}
+
+.workshop_form_flex {
+    min-width: 500px;
+    max-width: 500px;
+}
+
+.workshop_Form {
+    margin-bottom: 50px;
+}
+
+.workshopForm {
+    border-radius:15px;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.workshopForm input[type="submit"] {
+    background-color: #ff9c51;
+    border: 4px solid #ff9c51;
+    padding: 10px 22px;
+    border-radius: 300px;
+    margin: 20px auto 45px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #33486f;
+}
+
+.workshopForm div {
+    margin: 20px 25px 0 25px;
+}
+
+.firstName, 
+.lastName,
+.contactEmail,
+.help_check,
+.feedbackSubmit {
+    display: flex;
+    flex-direction: column;
+}
+
+.firstName {
+    margin-top: 35px;
+}
+
+.workshop_Form label {
+    margin-bottom: 8px;
+}
+
+/* responsive styles */
+
+/* header */
+
+@media (max-width: 640px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 65px 0 85px 0;
+    }
+
+    header li {
+        padding-left: 0px;
+    }
+
+    .header_nav {
+        padding: 10px;
+        margin: 0 10px 0 10px;
+    }
+
+    header ul {
+        padding: 0px;
+        justify-content: space-evenly;
+        
+    }
+
+    header img {
+        padding-bottom: 35px;
+    }
+
+    .testimonial_left, 
+    .testimonial_middle, 
+    .testimonial_right {
+        min-width: 90%;
+        min-height: 375px;
+    }
+
+    .hero_content {
+        margin-right: 0;
+        min-width: 90%;
+    }
+
+    /* .hero {
+        background-color: #33486f;
+        background-image: none;
+    } */
+
+    .logo_mobile {
+        display: none;
+    }
+
+    .logo_desktop {
+        display: block;
+    }
+
+    .nav_mobile {
+        display: block;
+    }
+
+    .nav_desktop {
+        display: none;
+    }
+
+}
+
+ /* homepage */
+
+@media (max-width: 960px) {
+    .hero_content {
+        margin-right: 0;
+        min-width: 80%;
+    }
+
+    .services_left, 
+    .services_middle, 
+    .services_right {
+        min-width: 90%;
+        height: auto;
+    }
+
+    .services_left p, 
+    .services_middle p, 
+    .services_right p {
+        margin: 0 50px 50px 50px;
+        min-height: 100px;
+        height: 100px;
+    }
+
+    .testimonial_left, 
+    .testimonial_middle, 
+    .testimonial_right {
+        min-width: 90%;
+        height: auto;
+    }
+
+
+    .hero {
+        background-size: cover;
+        background-position-x: 925px;
+    }
+
+    .about {
+        text-align: center;
+        min-height: 45vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+    
+    .about p {
+        text-align: center;
+        padding-left: 0;
+    }
+} 
+
+@media (max-width: 700px) {
+    .services_left p, 
+    .services_middle p, 
+    .services_right p {
+        margin: 0 50px 50px 50px;
+        min-height: 150px;
+        height: 200px;
+    }
+
+
+/* about */
+
+@media (max-width: 960px) {
+    .awards_section {
+        /* flex-direction: column; */
+    }
+}
+
+/* contact */
+@media (max-width: 890px) {
+    .mainSection {
+        flex-direction: column;
+    }
+
+    .contact_section,
+    .contact_form_flex {
+        min-width: 100%;
+        padding: 0;
+        
+    }
+}
+
+/* resume lp */
+
+@media (max-width: 890px) {
+    .mainSection {
+        flex-direction: column;
+    }
+
+    .workshop_lp,
+    .workshop_form_flex {
+        min-width: 100%;
+        padding: 0;
+        
+    }
+
+    #lp_header {
+        padding: 45px auto 35px auto;
+    }
+}
